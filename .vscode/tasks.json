@@ -1,0 +1,49 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "mingw-build",
+        "type": "shell",
+        "command": "g++",
+        
+        "args": [
+          "-g",
+          "${file}",
+          "-o",
+          "${workspaceRoot}/${fileBasenameNoExtension}.exe",
+          "-I","D:/opencv3.4_debug_all_x86/include",
+          "-I","D:/opencv3.4_debug_all_x86/include/opencv",
+          "-I","D:/opencv3.4_debug_all_x86/include/opencv2",
+          "-L","D:/opencv3.4_debug_all_x86/lib",
+          "-l", "opencv_core341d",
+          "-l", "opencv_imgproc341d",
+          "-l", "opencv_tracking341d",
+
+        ],
+        
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "msvc-build",
+        "type": "shell",
+        "command": "g++",
+        
+        "args": [
+          "-g",
+          "${file}",
+          "-o",
+          "${workspaceRoot}/${fileBasenameNoExtension}.exe",
+
+        ],
+        
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+
+  }

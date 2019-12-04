@@ -1,0 +1,40 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "C++ Launch (GDB)",                
+            "type": "cppdbg",                         
+            "request": "launch",                        
+                          
+            // "program": "${workspaceRoot}\\${fileBasename}.exe",   
+            "program": "${workspaceRoot}\\${fileBasenameNoExtension}.exe",
+                       
+            "miDebuggerPath":"D:\\mingw\\bin\\gdb.exe", 
+            "args": [],     
+            "stopAtEntry": false,                  
+            "cwd": "${workspaceRoot}",                  
+            "externalConsole": true,                  
+            "preLaunchTask": "mingw-build"　　                  
+        }
+        //调试msvc生成项目
+        {
+            "name": "调试msvc项目",                
+            "type": "cppdbg",                         
+            "request": "launch",                        
+                          
+            // "program": "${workspaceRoot}\\${fileBasename}.exe",   
+            "program": "${workspaceRoot}\\${fileBasenameNoExtension}.exe",
+                       
+            "miDebuggerPath":"D:\\mingw\\bin\\gdb.exe", 
+            "args": [],     
+            "stopAtEntry": false,                  
+            "cwd": "${workspaceRoot}",                  
+            "externalConsole": true,                  
+            "preLaunchTask": "msvc-build"　　                  
+        }
+    ]
+}
