@@ -36,7 +36,8 @@
           "${file}",
           "-o",
           "${workspaceRoot}/${fileBasenameNoExtension}.exe",
-
+          "-L","D:/opencv3.4_msvc_x64_vc14/lib",
+          "-l", "opencv_world341",
         ],
         
         "group": {
@@ -46,4 +47,4 @@
       }
     ]
 
-  }
+}
