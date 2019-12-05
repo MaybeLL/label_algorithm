@@ -20,21 +20,6 @@
             "externalConsole": true,                  
             "preLaunchTask": "mingw-build"　　                  
         }
-        //调试msvc生成项目
-        {
-            "name": "调试msvc项目",                
-            "type": "cppdbg",                         
-            "request": "launch",                        
-                          
-            // "program": "${workspaceRoot}\\${fileBasename}.exe",   
-            "program": "${workspaceRoot}\\${fileBasenameNoExtension}.exe",
-                       
-            "miDebuggerPath":"D:\\mingw\\bin\\gdb.exe", 
-            "args": [],     
-            "stopAtEntry": false,                  
-            "cwd": "${workspaceRoot}",                  
-            "externalConsole": true,                  
-            "preLaunchTask": "msvc-build"　　                  
-        }
+
     ]
 }
