@@ -10,7 +10,7 @@
           "-g",
           "${file}",
           "-o",
-          "${fileDirname}/build/${fileBasenameNoExtension}.exe",
+          "${fileDirname}\\build\\${fileBasenameNoExtension}.exe",
         ],
         
         "group": {
