@@ -1,19 +1,17 @@
 {
     "configurations": [
         {
-            "name": "MinGW",
+            "name": "MinGW64",
             "includePath": [
                 "${workspaceFolder}/**",
-                // "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10150.0/ucrt",
-                // "D:/mingw/include",
-                // "D:/opencv3.4_debug_all_x86/include"
+                "C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "D:\\mingw\\bin\\gcc.exe",
+            "compilerPath": "C:/Program Files/mingw-w64/x86_64-8.1.0-win32-seh-rt_v6-rev0/mingw64/bin/g++.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64"
