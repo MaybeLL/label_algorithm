@@ -40,7 +40,7 @@ int main()
 	Shape *shape;
 	Rectangle rec(10, 7);
 	Triangle tri(10, 5);
-	// Shape a;
+	Shape a;
 	// 存储矩形的地址
 	shape = &rec;
 	// 调用矩形的求面积函数 area
